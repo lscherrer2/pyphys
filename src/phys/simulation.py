@@ -43,7 +43,7 @@ class Simulation:
         sim_time: u.Quantity,
         timestep: u.Quantity,
         record: bool = True,
-        verbose: bool = True,
+        verbose: bool = False,
     ):
         timer = SimTimer(0.0 << u.s, sim_time.to(u.s), timestep.to(u.s))
         if record:

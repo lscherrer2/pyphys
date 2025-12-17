@@ -22,9 +22,9 @@ class Integrator(ABC):
         accels = forces / masses
         return accels
 
+    @staticmethod
     @abstractmethod
     def integrate(
-        self,
         engines: list[Engine],
         particles: list[Particle],
         timestep: u.Quantity,
