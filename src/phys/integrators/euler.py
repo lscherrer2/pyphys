@@ -7,7 +7,6 @@ __all__ = ["Euler"]
 
 
 class Euler(Integrator):
-    @staticmethod
     def integrate(
         engines: list[Engine],
         particles: list[Particle],

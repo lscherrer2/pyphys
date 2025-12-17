@@ -96,12 +96,12 @@ This project uses Astropy’s quantity system throughout.
 From the repo root:
 
 ```bash
-python scripts/three-body.py
-python scripts/earth-sun.py
+python script/three-body.py
+python script/earth-sun.py
 ```
 
-- `scripts/three-body.py` simulates a simple 3-body setup and plots trajectories.
-- `scripts/earth-sun.py` simulates an approximate Earth-Sun-like system.
+- `script/three-body.py` simulates a simple 3-body setup and plots trajectories.
+- `script/earth-sun.py` simulates an approximate Earth-Sun-like system.
 
 ## API overview
 
