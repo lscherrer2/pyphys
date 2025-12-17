@@ -36,6 +36,9 @@ class Engine(ABC):
         net_forces = np.sum(force_matrix, axis=1)
         return net_forces
 
-    def interact(self, particles: list[Particle]) -> Quantity: ...
-
-    interact = _symmetric_interact if symmetric else _asymmetric_interact
+    def interact(self, particles: list[Particle]) -> Quantity:
+        return (
+            self._symmetric_interact(particles)
+            if self.symmetric
+            else self._asymmetric_interact(particles)
+        )

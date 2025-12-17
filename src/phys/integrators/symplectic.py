@@ -10,10 +10,6 @@ __all__ = [
 ]
 
 
-def reflect_w_values(w_values: list[float]) -> list[float]:
-    return w_values + w_values[:-1][::-1]
-
-
 class Symplectic(Integrator):
     w_values: list[float]
 
